@@ -1,5 +1,5 @@
 import { User, Session } from '@/types/auth'
-import { getUsers, setUsers, setSession } from '@/lib/storage'
+import { getUsers, setUsers, setSession, getSession } from '@/lib/storage'
 
 // function to generate user unique id
 function generateId(): string {
@@ -73,6 +73,5 @@ export function logout(): void{
 
 // return current logged in users session or null if nobody is signed in
 export function getCurrentSession(): Session | null {
-    const {getSession} = require('@/lib/storage')
     return getSession()
 }
