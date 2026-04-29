@@ -115,7 +115,6 @@ export default function HabitList() {
           data-testid="empty-state"
           className="flex flex-col items-center justify-center py-16 text-center"
         >
-          <span className="text-5xl mb-4">🥲</span>
           <p className="text-gray-500 text-sm">
             No habits yet. Add one to get started!
           </p>
