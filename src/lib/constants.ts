@@ -19,4 +19,4 @@ export const HABIT_VALIDATION = {
 } as const
 
 // splash screen display duration in ms
-export const SPLASH_DURATION = 1000 //1 second used here 
+export const SPLASH_DURATION = 1000 //1 second used here

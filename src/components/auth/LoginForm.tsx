@@ -51,7 +51,9 @@ export default function LoginForm() {
         >
           <span className="text-2xl">🔥</span>
         </div>
-        <span className="text-xl font-bold">Habit Tracker</span>
+        <span className="text-xl font-bold" style={{ color: "#9333EA" }}>
+          Habit Tracker
+        </span>
       </div>
 
       {/* card */}
@@ -76,7 +78,7 @@ export default function LoginForm() {
           <div className="mb-4">
             <label
               htmlFor="login-email"
-              className="mb-1 block text-sm font-medium text-gray-400"
+              className="mb-1 block text-sm font-medium text-gray-700"
             >
               Email
             </label>
@@ -88,7 +90,7 @@ export default function LoginForm() {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="you@example.com"
               className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm outline-none focus:border-purple-500
-              focus:ring-2 focus:ring-purple-100"
+              focus:ring-2 focus:ring-purple-100 text-purple-600"
             />
           </div>
           {/* password input  */}
@@ -107,7 +109,7 @@ export default function LoginForm() {
               onChange={(e) => setPassword(e.target.value)}
               placeholder="••••••••"
               className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm outline-none focus:border-purple-500 focus:ring-2
-              focus:ring-purple-100"
+              focus:ring-purple-100 text-purple-600"
             />
           </div>
           {/* submit button  */}

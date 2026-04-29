@@ -23,16 +23,16 @@ export function getSession(): Session | null {
 
 // saves users session when they log in or clears it when they log out
 export function setSession(session: Session | null): void {
-  localStorage.setItems(STORAGE_KEYS.session, JSON.stringify(session));
+  localStorage.setItem(STORAGE_KEYS.session, JSON.stringify(session));
 }
 
 // fetches all habits from localStorage across the all users
 export function getHabits(): Habit[] {
   if (typeof window === "undefined") return [];
-  return JSON.parse(localStorage.getItems(STORAGE_KEYS.habits) ?? "[]");
+  return JSON.parse(localStorage.getItem(STORAGE_KEYS.habits) ?? "[]");
 }
 
 // saves updated habit list to localstorage after any change is made
 export function setHabits(habits: Habit[]): void {
-  localStorage.setItems(STORAGE_KEYS.habits, JSON.stringify(habits));
+  localStorage.setItem(STORAGE_KEYS.habits, JSON.stringify(habits));
 }

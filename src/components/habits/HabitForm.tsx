@@ -24,7 +24,7 @@ export default function HabitForm({ habitToEdit, onSave, onCancel }: Props) {
 
     if (!validation.valid) {
       setNameError(validation.error);
-      return; 
+      return;
     }
 
     // clear any previous error
@@ -89,7 +89,7 @@ export default function HabitForm({ habitToEdit, onSave, onCancel }: Props) {
             if (nameError) setNameError(null);
           }}
           placeholder="e.g. Drink Water"
-          className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-100"
+          className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-100 text-gray-900"
         />
         {nameError && <p className="mt-1 text-xs text-red-500">{nameError}</p>}
       </div>
@@ -109,7 +109,7 @@ export default function HabitForm({ habitToEdit, onSave, onCancel }: Props) {
           onChange={(e) => setDescription(e.target.value)}
           placeholder="e.g. Drink 8 glasses of water every day"
           rows={3}
-          className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-100 resize-none"
+          className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-100 resize-none text-gray-900"
         />
       </div>
 

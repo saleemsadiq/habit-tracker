@@ -14,7 +14,12 @@ export default function SplashScreen() {
           <span className="text-4xl text-white">🔥</span>
         </div>
         {/* app name  */}
-        <h1 className="text-4xl font-bold tracking-light">Habit Tracker</h1>
+        <h1
+          className="text-4xl font-bold tracking-light"
+          style={{ color: "#9333EA" }}
+        >
+          Habit Tracker
+        </h1>
         <p className="text-sm font-medium" style={{ color: "#9333EA" }}>
           Build better habits, one day at a time.
         </p>

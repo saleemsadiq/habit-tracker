@@ -17,7 +17,7 @@ export default function SignupForm() {
 
     // if the email and pssword fields are not filed, it returns the error and stops
     if (!email || !password) {
-      setError("Please fill in al fields");
+      setError("Please fill in all fields");
       return;
     }
     setIsLoading(true);
@@ -83,7 +83,7 @@ export default function SignupForm() {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="you@example.com"
               className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm outline-none focus:border-purple-500
-              focus:ring-2 focus:ring-purple-100"
+              focus:ring-2 focus:ring-purple-100 text-purple-600"
             />
           </div>
           {/* password */}
@@ -102,7 +102,7 @@ export default function SignupForm() {
               onChange={(e) => setPassword(e.target.value)}
               placeholder="••••••••"
               className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm outline-none focus:border-purple-500 focus:ring-2
-               focus:ring-purple-100"
+               focus:ring-purple-100 text-purple-600"
             />
           </div>
           {/* create account button  */}

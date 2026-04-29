@@ -6,12 +6,12 @@ import HabitCard from "@/components/habits/HabitCard";
 import HabitForm from "@/components/habits/HabitForm";
 
 export default function HabitList() {
-  const sesson = getSession();
+  const session = getSession();
 
   // load all habits from local storage, filter to current user only
   const allStored = getHabits();
-  const userHabits = sesson
-    ? allStored.filter((h) => h.userId === sessionStorage.userId)
+  const userHabits = session
+    ? allStored.filter((h) => h.userId === session.userId)
     : [];
 
   // habits held in state so ui can re-render when list changes
@@ -67,7 +67,7 @@ export default function HabitList() {
     setHabitToEdit(null);
     setShowCreateForm(false);
     };
-    
+
   return (
     <div className="w-full">
       {/* ── Header row: title + add button ── */}
@@ -115,7 +115,7 @@ export default function HabitList() {
           data-testid="empty-state"
           className="flex flex-col items-center justify-center py-16 text-center"
         >
-          <span className="text-5xl mb-4">🌱</span>
+          <span className="text-5xl mb-4">🥲</span>
           <p className="text-gray-500 text-sm">
             No habits yet. Add one to get started!
           </p>
