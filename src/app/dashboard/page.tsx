@@ -45,8 +45,8 @@ export default function DashboardPage() {
   return (
     <ProtectedRoute>
       <div
-        className="min-h-screen"
-        style={{ backgroundColor: "#F8F7FF" }}
+        className="min-h-screen bg-purple-100"
+        // style={{ backgroundColor: "#F8F7FF" }}
         data-testid="dashboard-page"
       >
         {/* header */}

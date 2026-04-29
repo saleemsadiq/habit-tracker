@@ -64,7 +64,7 @@ export default function HabitCard({
   return (
     <div
       data-testid={`habit-card-${slug}`}
-      className="rounded-2xl bg-white p-4 shadow-sm border border-gray-100"
+      className="rounded-2xl bg-gray-50 p-4 shadow-sm border border-gray-100"
     >
       {/* delete confirmation overlay  */}
       {showDeleteConfirm && (
