@@ -106,7 +106,7 @@ export default function HabitCard({
           type="button"
           data-testid={`habit-complete-${slug}`}
           onClick={handleToggleComplete}
-          className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border-2 transition-all"
+          className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md border-2 transition-all"
           style={{
             backgroundColor: isCompletedToday ? "#9333EA" : "transparent",
             borderColor: isCompletedToday ? "#9333EA" : "#D1D5DB",
@@ -121,7 +121,7 @@ export default function HabitCard({
         {/* habit name and streak  */}
         <div className="flex-1">
           <p
-            className="font-semi-bold text-gray-900"
+            className="font-semi-bold text-purple-500"
             style={{
               textDecoration: isCompletedToday ? "line-through" : "none",
               opacity: isCompletedToday ? 0.6 : 1,
@@ -147,11 +147,10 @@ export default function HabitCard({
             type="button"
             data-testid={`habit-edit-${slug}`}
             onClick={() => onEdit(habit)}
-            className="flex h-8 w-8 items-center justify-center rounded-lg text-gray-400 hover:text-purple-600 transition-colors"
-            style={{ backgroundColor: "#F3F4F6" }}
+            className="flex p-2 items-center justify-center rounded-lg text-gray-600 bg-gray-200 hover:bg-purple-300 hover:text-purple-600 hover:background transition-colors"
             aria-label="Edit habit"
           >
-            ✏️
+            Edit
           </button>
 
           {/* Delete button */}
@@ -159,11 +158,10 @@ export default function HabitCard({
             type="button"
             data-testid={`habit-delete-${slug}`}
             onClick={handleDeleteClick}
-            className="flex h-8 w-8 items-center justify-center rounded-lg text-gray-400 hover:text-red-500 transition-colors"
-            style={{ backgroundColor: "#F3F4F6" }}
+            className="flex p-2 items-center justify-center rounded-lg text-gray-600 bg-gray-200 hover:bg-red-100 hover:text-red-500 transition-colors"
             aria-label="Delete habit"
           >
-            🗑️
+            Delete
           </button>
         </div>
       </div>

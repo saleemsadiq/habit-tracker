@@ -58,13 +58,13 @@ export default function LoginForm() {
 
       {/* card */}
       <div className="w-full max-w-sm rounded-2xl bg-white p-8 shadow-md">
-        <h1 className="mb-1 text-2xl font-bold text-gray-900">Welcome Back</h1>
+        <h1 className="mb-1 text-2xl font-bold text-purple-500">Welcome Back</h1>
         <p className="mb-6 text-sm text-gray-600">
           Signin to continue tracking your habits
         </p>
         {/* error message that renders when error is not null  */}
         {error && (
-          <div className="mb-4 rounded-lg bg-red-50 px-4 py-3 text-sm text-red-600">
+          <div className="mb-4 rounded-lg px-4 py-3 text-sm text-red-500">
             {error}
           </div>
         )}
@@ -88,9 +88,8 @@ export default function LoginForm() {
               data-testid="auth-login-email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="you@example.com"
-              className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm outline-none focus:border-purple-500
-              focus:ring-2 focus:ring-purple-100 text-purple-600"
+              placeholder="emrys@gmail.com"
+              className="w-full rounded-xl border border-gray-400 px-4 py-3 text-sm outline-none text-purple-600"
             />
           </div>
           {/* password input  */}
@@ -107,9 +106,8 @@ export default function LoginForm() {
               data-testid="auth-login-password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="••••••••"
-              className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm outline-none focus:border-purple-500 focus:ring-2
-              focus:ring-purple-100 text-purple-600"
+              placeholder="type your password here"
+              className="w-full rounded-xl border border-gray-400 px-4 py-3 text-sm outline-none text-purple-600"
             />
           </div>
           {/* submit button  */}
